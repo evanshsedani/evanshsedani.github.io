@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database practical</title>
+    <link rel="icon" type="image/x-icon" href="../elements/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:
+ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;
+1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+ rel="stylesheet"> <!--this the font for heading1-->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;
+0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;
+1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..
+900;1,100..900&display=swap" rel="stylesheet"><!--this the font for heading3-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Share+Tech+Mono&display=swap"
+ rel="stylesheet"><!--this the font for heading2-->
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"><!--this the font for theoryicon-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/codepen-embed.css"><!--for highligts js-->
+              <style>
+              
+              h2 {
+                font-size: 40px;
+                font-family: "Share Tech mono";
+                margin: 50px;
+                word-wrap: break-word;
+                white-space: normal;
+                color: #0e1111;
+            }
+
+                html,body{
+                 padding:0px;
+                 margin:0px;
+                }
+    h1{
+        font-family: Poppins;
+        color: #0C96FF;
+        }
+        table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    table{
+        background-color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 60%;
+    }
+    img{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 400px;
+    }
+    a{
+                text-decoration: none;
+                color: #ffffff;
+            }
+        </style>
+</head>
+<body style="background-color: #ece0d1; display: flex; flex-direction: column;">
+    <div style="background-color: #065473;">
+        <p class="header" style="color: white; font-size: 15px; 
+         margin-top: 20px; margin-left: 20px; font-family: Poppins;">
+         <a href="../index.html" style="text-decoration: none; color: #ffffff;">
+            Home</a>&nbsp&nbsp&nbsp<a href="../aboutme.html">About me</a></p>
+        <h1 style="text-align: center;"><a href="../index.html" style="text-decoration:none; color: #ffffff; ">
+            ITpastabowl<i class="material-icons">
+            rice_bowl </i></a></h1>
+    <h3 style="text-align: center; color: #0C96FF; font-family: Work sans;">9626 Information Technology study
+         material.©</h3></div>
+
+         <span style="font-family: work sans;"><p style="font-family: work sans; margin-left: 30px;"><p>
+            <h1>Database</h1>
+Data in a single table is known as a <b>flat file database</b>.<Br>
+Data stored over multiple tables, joined via relationships is known as a <b>relational database</b>.<Br>
+The process of <u>converting a flat file database into a relational data</u> base is known as <b>normalization</b>.<Br><Br>
+
+<h1>3 main relationships</h1>
+<b>Primary key</b>: a field that contains the unique identifier for a record<br>
+<b>Foreign key</b>: a field in a table that refers to the primary key in another table<Br><Br>
+
+<ul>
+ <li>
+        <b>One-to-one</b>
+        A one-to-one relationship is when <u>each record in one table only connects to one record in another table</u>. For ex- Think of a "Person"<Br>
+         and their "Social Security Number." Each person has a one-to-one relationship with their Social Security Number, and vice versa.<Br>
+         <u>Each SSN corresponds to one person, and each person has one SSN</u>.<Br><Br>
+ </li>
+    
+   <li>
+        <b>One-to-many</b>
+         A one-to-many relationship is when <u>each record in one table can connect to many</u> (zero or more) records in another table.<Br>
+         For ex- Consider a "Department" and "Employees." One department can have many employees, but each employee belongs<br>
+         to only one department. So, <u>one department to many employees, and each employee to one department</u>.<Br><Br>
+   </li>
+    
+<li>
+        <b>Many-to-many</b>
+        In a many-to-many relationship, each record in one table can connect to many records in another table but each record in the<Br>
+        other table can also connect to many records in the original table. For ex- “Students" and "Courses." 
+        <u>
+            A student can enroll<Br>
+             in multiple courses, and a course can have multiple students.
+        </u> This creates a many-to-many relationship.<Br>
+</li>
+</ul>
+<img src="../elements/relationship.png" alt="relationships">
+<b>NOTE</b>- In access and most dbms software, a <u>many to many relationship is NOT possible</u> to create. This is why we use<Br>
+ a junction or <b>link table</b>.
+<ul>
+    <b>Table 1: Students</b><Br>
+    <li>Fields: <u>StudentID</u> (Primary Key), StudentName, etc.</li><Br>
+    <b>Table 2: Courses</b><br>
+    <li>Fields: <u style="color: #0C96FF;">CourseID</u> (Primary Key), CourseName, etc.</li><Br>
+    <b>Link Table: Enrollment</b><Br>
+    <li>
+        Fields: EnrollmentID (Primary Key), <u>StudentID</u> (Foreign Key referencing Students table),<br>
+         <u style="color: #0C96FF;">CourseID</u> (Foreign Key referencing Courses table), and any additional fields like EnrollmentDate.
+    </li>
+    </ul>
+
+<h1>Type of ERD</h1>
+<b>Physical</b>- Detailed, includes technical specifics<br><br>
+<b>Conceptual</b>- High-level, focuses on entities, relationships, and major attributes without technical details.<br><Br>
+<b>Logical</b>- Intermediate level, refines the conceptual model with more details like keys and normalization, guiding the<Br>
+ actual database design<Br>
+<img src="../elements/erd.png" alt="erd image" style="width: 600px;">
+
+<h1>Referential Integrity</h1> 
+<b>Referential Integrity</b> ensures that relationships between tables remain valid. Here's how it works:<Br>
+It often includes actions on update or delete, specifying what should happen if the primary key values are modified or if records<Br>
+ are deleted in the referenced table. Common actions are restricting updates/deletes, cascading changes, setting null values,<Br>
+ or setting default values.<Br>
+If you have a database about <u>Authors and Books in a library</u> and you <u>delete one of the authors</u> from the table, the<Br>
+ corresponding book in the "Books" table might be left hanging with an orphaned Author, referencing an author that no longer exists.<Br>
+ This can lead to <i>inconsistency</i>. With referential integrity enabled, the database software would <b>prevent you from performing such actions</b>.<Br>
+Enabling the <u>“Cascade Delete Related Records”</u> option would allow you to delete that field and will automatically remove any corresponding<Br>
+ fields in the other tables.
+<img src="../elements/enforceref.png" alt="access refrential integrity" style="width: 300px;">
+<h1>NORMALIZATION</h1>
+<h1>First normal form:</h1>
+Data in first normal form (1NF) must satisfy the following criteria: 
+<ul>
+    <li>all fields must contain <u>atomic data</u></li>
+    <li>there must be <u>no repeating groups of data</u></li>
+    <li>there must be a unique key</li>
+</ul>
+<b>Practically</b><br>
+<b>Remove Duplicate Rows</b>: In excel, go to data, remove duplicates<Br>
+<b>Atomic Values</b>: The easiest way to split data is to go to Data-->Text to columns and seperate by space<br>
+If a formula is required, one can make use of =mid and =find.
+<Table>
+    <Tr><Td></Td><Td>A</Td><td>B</td></Tr>
+    <Tr><Td>1</Td><Td>Fullname</Td><td>firstname</td></Tr>
+    <Tr ><Td>2</Td><Td>John Doe</Td><td>John</td></Tr>
+</Table><Br>
+<pre >
+    <code class="language-js" style="border-radius: 10px; font-size: 20px; width: 500px;margin-left: auto;margin-right: auto;display: block;" ">
+    =MID(A2,1,FIND(" ",A2)-1)
+    </code></pre>
+        This formula works by using =<u>mid to isolate the first name</u>. A2 is our target cell<Br>
+        we use 1 so that our name starts from the first letter, we then use the <u>=find formula</u><br>
+        to locate the space in the name. We use <b>-1</b> so that the space is not included in the final output.<Br>
+            <Table>
+                <Tr><Td></Td><Td>A</Td><td>B</td></Tr>
+                <Tr><Td>1</Td><Td>Fullname</Td><td>lastname</td></Tr>
+                <Tr ><Td>2</Td><Td>John Doe</Td><td>Doe</td></Tr>
+            </Table><Br>
+            <pre >
+                <code class="language-js" style="border-radius: 10px; font-size: 20px; width: 500px;margin-left: auto;margin-right: auto;display: block;" ">
+    =MID(A2,FIND(" ",A2)+1,20)
+                </code></pre>
+        This <u>formula works on the same basis</u>, except the <u>start and endpoint functions are reversed</u>. The formula<Br>
+        first finds the space and starts from there. The end point has been set as 20 because most names will not be<Br>
+        longer than 20 characters. The <b>+1</b> is so that there isn't a space before the name.<Br>
+
+<h1>Second normal form</h1>
+ Data in <b>second normal form</b> (2NF) must have <u>no partial key dependencies</u>. This means that no non-key fields can be dependent<Br>
+ upon part of a primary key. <i>In simple terms</i>, a field that is completely related to another, 
+ <u>should be separated into <Br>another table.</u>
+<h1>Third normal form</h1>
+Data in <b>third normal form</b> 3NF must have no non key dependencies. This means that there should be no fields that are dependent<Br>
+ upon another field that is not a primary key.  In simpler words, <u>all fields should be dependent on the primary key</u>.
+
+<h1>Data dictionary</h1>
+<b>metadata</b> (information) about the database<Br><Br>
+    <img src="../elements/datadic.png" alt="data dictionary" style="width: 600px;">
+<b>Data in a data dictionary:</b>
+ <ul>
+     <li>field names to identify each field</li>
+     <li>data types, such as text, integer, date/time</li>
+     <li>field size, such as the length of a text field or the maximum value of a numeric field</li> 
+    <li>format of fields</li> 
+    <li>default values which are values a field is set to be initially when a new record is created</li> 
+    <li>primary keys, compound keys and foreign keys</li> 
+     <li>validation rules that restrict data entry for that field</li> 
+ </ul>
+
+
+         </p></span>
+         <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+         <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/languages/go.min.js"></script>
+     
+     <script>hljs.highlightAll();</script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel tips</title>
+    <link rel="icon" type="image/x-icon" href="../elements/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:
+ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;
+1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+ rel="stylesheet"> <!--this the font for heading1-->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;
+0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;
+1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..
+900;1,100..900&display=swap" rel="stylesheet"><!--this the font for heading3-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Share+Tech+Mono&display=swap"
+ rel="stylesheet"><!--this the font for heading2-->
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"><!--this the font for theoryicon-->
+              <style>
+              h2 {
+                font-size: 40px;
+                font-family: "Share Tech mono";
+                margin: 50px;
+                word-wrap: break-word;
+                white-space: normal;
+                color: #0e1111;
+            }
+
+                html,body{
+                 padding:0px;
+                 margin:0px;
+                }
+                a{
+                text-decoration: none;
+                color: #ffffff;
+            }
+            table{
+        background-color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 40%;
+    }
+    h1{
+        font-family: Poppins;
+        color: #0C96FF;
+        }
+        table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    img{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 400px;
+    }
+
+        </style>
+</head>
+<body style="background-color: #ece0d1; display: flex; flex-direction: column;">
+    <div style="background-color: #065473;">
+        <p class="header" style="color: white; font-size: 15px; 
+         margin-top: 20px; margin-left: 20px; font-family: Poppins;">
+         <a href="../index.html" style="text-decoration: none; color: #ffffff;">
+            Home</a>&nbsp&nbsp&nbsp<a href="../aboutme.html">About me</a></p>
+        <h1 style="text-align: center;"><a href="../index.html" style="text-decoration:none; color: #ffffff; ">
+            ITpastabowl<i class="material-icons">
+            rice_bowl </i></a></h1>
+    <h3 style="text-align: center; color: #0C96FF; font-family: Work sans;">9626 Information Technology study
+         material.©</h3></div>
+
+         <span style="font-family: work sans;"><p style="font-family: work sans; margin-left: 30px;"><p>
+            <h1>Excel tips</h1>
+            To split data from one cell, rather than use complicated formulas go to <u>Data --> Text to columns</u>.
+            <img src="../elements/texttocolmns.png" alt="Text to columns feature"><Br>
+            <img src="../elements/txtclm2.png" alt="Text to columns feature 2"><Br><Br>
+
+            To change the <b>orientation of data use</b> <u>transpose</u>. Copy the data, before pasting go to paste options<Br>
+            and select transpose.<Br>
+                <video autoplay loop muted playsinline style="margin-left: auto;margin-right: auto; display: block;">
+                    <source src="../elements/transpose.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video><Br><Br>
+            
+            While formatting instead of manually following multiple steps to format cells, use <b>format painter</b>.
+            <Br>
+                <video autoplay loop muted playsinline style="margin-left: auto;margin-right: auto; display: block;">
+                    <source src="../elements/formatpainter.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video><Br><Br>
+            
+            <h1>Wildcards</h1>
+            ? stands for <u>one character</u><Br>
+            * stands for <u>multiple characters</u><Br>
+            These can be used in formulas to substitute strings
+            
+            <h1>Proper function</h1> 
+            =proper will <u>format text to basic values</u>. Cells that say 'JOhN dOE' will be formatted to 'John Doe'<Br><Br>
+            <H1>Format text to numbers</H1>
+            <Table>
+                <Tr><Td></Td><Td>A</Td><td>B</td></Tr>
+                <Tr><Td>1</Td><Td style="text-align: left;">100</Td><td style="text-align: right;">100</td></Tr>
+                <Tr ><Td>2</Td><Td style="text-align: left;">200</Td><td style="text-align: right;">200</td></Tr>
+            </Table><Br>
+            When performing calculations on numbers formatted as texts we have to convert them to numbers. We can check if a number<Br>
+             is formatted as text by seeing if its <b>left aligned</b>. To convert it into a number we can <u>multiply it by one or add zero</u>.<Br>
+             (A1)*1 or (A1)+0<Br>
+            
+            To <b>convert a formula into value</b>, we don’t need to save as .csv every time. We can copy the cells, right click and choose<Br>
+             ‘paste-special’
+             <img src="../elements/pastespecial.jpg" alt="paste special" style="width: 200px;"><Br><Br>
+                <H1>To view named ranges</H1>
+            
+            After naming multiple ranges in excel, to <u>view all the names at once</u>, simply press F3 
+              
+         </p></span>
+    
+</body>
+</html>

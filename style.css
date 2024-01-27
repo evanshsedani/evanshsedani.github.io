@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%; /* Adjust the width as needed */
+    max-width: 500px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+}
+
+.box {
+    flex: 1;
+    background-color: #08748C;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #065473;
+    padding: 20px;
+    margin: 20px;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Adjust the width as needed */
+    max-width: 400px; /* Adjust the maximum width as needed */
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+header {
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.header:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 601px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .box {
+        width: 45%;
+    }
+
+    h1 {
+        font-size: 40px;
+        font-family: "Poppins";
+    }
+
+    h2 {
+        font-size: 50px;
+        font-family: "Share Tech mono";
+    }
+
+    h3 {
+        font-size: 20px;
+        font-family: "Work Sans";
+        color: #0C96FF
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 40px;
+        -webkit-text-stroke: 1px #065473;
+    }
+
+    h3 {
+        font-size: 16px;
+        color: #0C96FF;
+    }
+
+    footer {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+}

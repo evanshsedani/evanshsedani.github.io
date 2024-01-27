@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert systems</title>
+    <link rel="icon" type="image/x-icon" href="../elements/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:
+ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;
+1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+ rel="stylesheet"> <!--this the font for heading1-->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;
+0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;
+1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..
+900;1,100..900&display=swap" rel="stylesheet"><!--this the font for heading3-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Share+Tech+Mono&display=swap"
+ rel="stylesheet"><!--this the font for heading2-->
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"><!--this the font for theoryicon-->
+              <style>
+              h2 {
+                font-size: 40px;
+                font-family: "Share Tech mono";
+                margin: 50px;
+                word-wrap: break-word;
+                white-space: normal;
+                color: #0e1111;
+            }
+
+                html,body{
+                 padding:0px;
+                 margin:0px;
+                }
+    h1{
+        font-family: Poppins;
+        color: #0C96FF;
+        }
+        table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    a{
+                text-decoration: none;
+                color: #ffffff;
+            }
+        </style>
+</head>
+<body style="background-color: #ece0d1; display: flex; flex-direction: column;">
+    <div style="background-color: #065473;">
+        <p class="header" style="color: white; font-size: 15px; 
+         margin-top: 20px; margin-left: 20px; font-family: Poppins;">
+         <a href="../index.html" style="text-decoration: none; color: #ffffff;">
+            Home</a>&nbsp&nbsp&nbsp<a href="../aboutme.html">About me</a></p>
+        <h1 style="text-align: center;"><a href="../index.html" style="text-decoration:none; color: #ffffff; ">
+            ITpastabowl<i class="material-icons">
+            rice_bowl </i></a></h1>
+    <h3 style="text-align: center; color: #0C96FF; font-family: Work sans;">9626 Information Technology study
+         material.©</h3></div>
+
+         <span style="font-family: work sans;"><p style="font-family: work sans; margin-left: 30px;"><p>
+            <h1>Expert systems</h1>
+An <b>expert system</b> is a computerised system that attempts to reproduce the decision-making process of an expert human being<Br>
+An expert system consists of several components. These components include: 
+<ul>
+    <li>a user interface</li> 
+    <li>a knowledge base</li> 
+    <li>an inference engine</li> 
+    <li>an explanation system</li> 
+    <li>method of output</li>
+</ul>
+An expert system operates by prompting the user to enter certain data using the <u>user interface</u>, referring to the <u>knowledge base</u><Br>
+ and using the <u>inference engine</u> to aid the decision-making process it is designed to simulate
+<h1>Components of an expert system</h1>
+<img src="../elements/expert.png" alt="expert system components" style="margin-left: auto; margin-right: auto; display: block;width: 600px;">
+<h1>User interface</h1>
+ The user interface is the way that a user interacts with the expert system. It will guide the user about what data<br>
+ they need to input into the expert system.
+<h1>Knowledge base</h1>
+The knowledge base is a database of related information about a particular subject. It allows the storage and retrieval of the knowledge<Br>
+ required for an expert system to operate. In developing an expert system, <mark>experts are interviewed to gather their knowledge</mark> in a<Br>
+ specific field. This knowledge is then used to build a database that is the knowledge base for the expert system.<Br>
+ The developers will want two types of knowledge from the experts, factual knowledge and heuristic knowledge.<Br><Br>
+ <b>Factual knowledge:</b> is definitive and commonly shared among experts.<br>
+ <b>Heuristic knowledge:</b> is derived from personal experiences and reasoning.<Br><Br>
+<b>Knowledge base editor</b>: a component of an expert system that is used to <mark>amend or update the knowledge base</mark>
+<h1>Rules base</h1>
+<b>Rules base</b> is part of the knowledge base. The rules base is a set of rules that will be used to produce an output or decision<Br>
+ by the expert system. These rules are used by the inference engine as a base for reasoning, to obtain a solution to a problem<Br>
+ or a decision. Each rule consists of two parts: the <span style="color: #0C96FF;">IF</span> and the <span style="color: #0C96FF;">THEN</span>. 
+<h1>Inference engine</h1>
+The <b>inference engine</b> is the part of the expert system that makes <u>judgements and reasoning</u> using the knowledge base<Br>
+ and user responses. It is designed to produce reasoning based on the rules and the knowledge base. It will ask the user questions and,<Br>
+ based on their answer, it will follow a line of logic.<Br>
+ There are two main methods that an inference engine can use to simulate reasoning, these are <u>backward chaining and forward chaining</u>.<Br><Br>
+<b>Backward chaining</b> is based on <u>goal driven reasoning</u>. In backward chaining, the system tries to take a goal and<Br>
+ repeatedly split it into sub-goals that are simpler to achieve. The system starts with a goal or desired outcome and works backward <Br>
+to find the facts that support that goal. It's like asking "<span style="color: #0C96FF;">Why</span>?" to trace back the reasoning.<Br>
+ For ex: If the user reported flu, backward chaining would trace back to the rules and find, "IF flu THEN fever AND cough AND fatigue." Providing general symptoms of flu.<Br><Br>
+
+<b>Forward chaining</b> is based on <u>data driven reasoning</u> and is dependent on the data that it is provided with. The system will<Br>
+ take data input by the user and move forward from rule to rule to suggest a possible outcome. For ex if the user reports symptoms<Br>
+ like <span style="color: crimson;">fever, cough, and fatigue</span>, the app might use forward chaining to conclude,<Br>
+ "IF fever AND cough AND fatigue THEN it could be flu."
+ <img src="../elements/forward.png" alt="forward chaining diagram" style="margin-left: auto; margin-right: auto; display: block; width: 500px;">
+
+<h1>Explanation system</h1>
+The explanation system is the part of an expert system that <u>provides an explanation of how an outcome was achieved</u><Br>
+
+<h1>Advantages of expert system</h1>
+<Table>
+    <Tr><td colspan="2"><b>Expert system</b></td></Tr>
+    <tr><td><i>Advantages</i></td>
+        <td><i>Disadvantages</i></td>
+    </tr>
+    <tr>
+        <td>can provide answers to questions that are outside the <Br>knowledge that you currently have</td>
+        <td>do not have the intuition that humans have. Their response<Br> can only be a logical one and may not be useful.</td>
+    </tr>
+    <tr>
+        <td>Aids professionals by prompting them and guiding<Br> them to look at
+         areas of knowledge they may not have<Br> considered or remembered</td>
+        <td>are only as good as the rules and data they are provided with.</td>
+    </tr>
+    <tr>
+        <td>consistent responses produced as <Br>they are arrived at in a logical way</td>
+        <td>are expensive to create</td>
+    </tr>
+    <tr>
+        <td>can be used at any time</td>
+        <td>cannot adapt a great deal to their environment <Br>and may require the knowledge base to be edited</td>
+    </tr>
+    <tr>
+        <td>can arrive at a solution to a problem quicker than a human would</td>
+        <td></td>
+    </tr>
+
+</Table>       <Br><br>
+
+<b>Applications of expert systems</b>
+<ul>
+    <li>Medical symptoms</li>
+    <li>Car engine fault diagonistics</li>
+    <li>Financial planning</li>
+    <li>Insurance planning</li>
+    <li>Plant identification</li>
+</ul>
+
+
+         </p></span>
+</body>
+</html>
